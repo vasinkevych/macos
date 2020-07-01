@@ -128,6 +128,6 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 echo "Creating folder structure..."
 [[ ! -d github ]] && mkdir github
-[[ ! -d Atlassian ]] && mkdir clients
+[[ ! -d clients ]] && mkdir clients
 
 echo "Bootstrapping complete"
