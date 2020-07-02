@@ -115,6 +115,9 @@ sh -c "$(curl -fsSL https://raw.githubus  ercontent.com/ohmyzsh/ohmyzsh/master/t
 echo "Installing NVM..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
+echo "Installing npm global packages..."
+npm install -g gatsby-cli
+
 echo "Configuring OSX..."
 
 # Show filename extensions by default
