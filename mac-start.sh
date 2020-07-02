@@ -121,16 +121,16 @@ npm install -g gatsby-cli
 echo "Configuring OSX..."
 
 # Show filename extensions by default
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+#defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Enable tap-to-click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+# defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.finder AppleShowAllFiles YES
 
 
 echo "Creating folder structure..."
 [[ ! -d github ]] && mkdir github
-[[ ! -d Atlassian ]] && mkdir Atlassian
+[[ ! -d clients ]] && mkdir clients
 
 echo "Bootstrapping complete"
